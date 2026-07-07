@@ -1,0 +1,89 @@
+# ====================================================================
+# SYSTEM & EDITORS
+# ====================================================================
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows specific
+Thumbs.db
+Ehthumbs.db
+desktop.ini
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.bak
+
+# ====================================================================
+# SECRETS & CONFIGURATION
+# ====================================================================
+# Passwords, JWT secrets, and API keys go here
+
+.env
+.env.local
+.env.*.local
+config.json
+*.pem
+*.key
+
+# ====================================================================
+# GO
+# ====================================================================
+# Compiled binaries (finished .exe or Linux executables)
+
+/agent_go/agent
+/agent_go/*.exe
+/backend_go/server
+/backend_go/*.exe
+
+# Test coverage files
+*.out
+*.prof
+
+# ====================================================================
+# PYTHON
+# ====================================================================
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments (bulky Python package folders)
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# ====================================================================
+# TYPESCRIPT / NODE
+# ====================================================================
+# Node modules (restored via package.json)
+node_modules/
+/dashboard-ts/.next/
+/dashboard-ts/out/
+/dashboard-ts/build/
+
+# npm/yarn log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ====================================================================
+# DATABASES & DOCKER
+# ====================================================================
+# Local Postgres data storage
+.db_data/
+postgres_data/
+
+# Docker logs
+*.log

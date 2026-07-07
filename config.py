@@ -1,0 +1,13 @@
+BASE_URL = "https://www.dnd5eapi.co/api/2014/"
+
+RACES = BASE_URL + "races/"
+CLASSES = BASE_URL + "classes/"
+ABILITY_SCORES = BASE_URL + "ability-scores/"
+SPELLS = BASE_URL + "spells/"
+FEATS = BASE_URL + "feats/"
+TRAITS = BASE_URL + "traits/"
+SKILLS = BASE_URL + "skills/"
+PROFICIENCY = BASE_URL + "profiencies/"
+LANGUAGE = BASE_URL + "languages/"
+ALIGNMENT = BASE_URL + "alignments/"
+EQUIPMENT = BASE_URL + "equipment/"
