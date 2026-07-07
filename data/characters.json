@@ -53,31 +53,6 @@
         }
     },
     {
-        "3": {
-            "name": "Testos Teron",
-            "race": "Tiefling",
-            "class": "Rogue",
-            "alignment": "Chaotic Good",
-            "hitpoints": 7,
-            "level": 1,
-            "ability scores": {
-                "STR": 10,
-                "DEX": 13,
-                "CON": 9,
-                "INT": 12,
-                "WIS": 13,
-                "CHA": 16
-            },
-            "traits": [
-                "Darkvision",
-                "Hellish Resistance",
-                "Infernal Legacy"
-            ],
-            "spells": [],
-            "created": "27.05.2026 - 07:59:39"
-        }
-    },
-    {
         "4": {
             "name": "Michael K\u00f6nig von Hamburg",
             "race": "Half-Orc",
@@ -105,6 +80,63 @@
                 "Mage Hand"
             ],
             "created": "28.05.2026 - 08:14:26"
+        }
+    },
+    {
+        "5": {
+            "name": "Testi McTest",
+            "race": "Gnome",
+            "class": "Ranger",
+            "alignment": "Chaotic Neutral",
+            "hitpoints": 12,
+            "level": 1,
+            "ability scores": {
+                "STR": 14,
+                "DEX": 8,
+                "CON": 14,
+                "INT": 15,
+                "WIS": 13,
+                "CHA": 14
+            },
+            "traits": [
+                "Darkvision",
+                "Savage Attacks",
+                "Relentless Endurance",
+                "Menacing",
+                "Darkvision",
+                "Gnome Cunning"
+            ],
+            "spells": [
+                "Alarm",
+                "Animal Friendship",
+                "Cure Wounds"
+            ],
+            "created": "07.07.2026 - 17:15:33"
+        }
+    },
+    {
+        "6": {
+            "name": "Testi McTest",
+            "race": "Dragonborn",
+            "class": "Barbarian",
+            "alignment": "Lawful Neutral",
+            "hitpoints": 11,
+            "level": 1,
+            "ability scores": {
+                "STR": 8,
+                "DEX": 13,
+                "CON": 9,
+                "INT": 9,
+                "WIS": 10,
+                "CHA": 11
+            },
+            "traits": [
+                "Draconic Ancestry",
+                "Breath Weapon",
+                "Damage Resistance"
+            ],
+            "spells": [],
+            "created": "07.07.2026 - 17:41:00"
         }
     }
 ]

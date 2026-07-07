@@ -79,14 +79,3 @@ class Character:
                     Character.spells.append(spell["name"])
                     if len(Character.spells) == 3:
                         break
-
-    def increase_level(self):
-
-        self.level += 1
-
-    def change_hitpoints(self, healing=0, damage=0):
-
-        if healing > 0:
-            self.hitpoints += healing
-        else:
-            self.hitpoints -= damage

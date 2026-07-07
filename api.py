@@ -66,9 +66,9 @@ def get_classes() -> list:
     return classes
 
 
-def get_class_details(character_class):
+def get_class_details(character_class) -> dict:
 
-    class_details = None
+    class_details = {}
 
     with urllib.request.urlopen(
         config.CLASSES + character_class
