@@ -29,8 +29,10 @@ def main():
                     delete_character()
                 case 0:
                     exit()
+                case _:
+                    print("Please just use numbers 1 - 4 and 0!\n")
         except ValueError:
-            print("Please just use the number keys!")
+            print("Please just use the number keys!/n")
 
 
 main()

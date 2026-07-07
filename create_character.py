@@ -18,6 +18,12 @@ def randomise_character(name) -> Character:
         name, race, character_class, hitpoints, alignment, level
     )
 
+    random_character.roll_ability_scores()
+    random_character.apply_race_bonuses()
+    random_character.starting_hitpoints()
+    random_character.racial_traits()
+    random_character.set_spells()
+
     return random_character
 
 
@@ -36,12 +42,6 @@ def create_character() -> None:
     character = randomise_character(name)
     creation_time = time.strftime("%d.%m.%Y - %H:%M:%S")
     id = len(character_list) + 1
-
-    character.roll_ability_scores()
-    character.apply_race_bonuses()
-    character.starting_hitpoints()
-    character.racial_traits()
-    character.set_spells()
 
     new_character = {
         id: {

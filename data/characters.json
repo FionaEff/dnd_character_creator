@@ -106,5 +106,33 @@
             ],
             "created": "28.05.2026 - 08:14:26"
         }
+    },
+    {
+        "5": {
+            "name": "Testo Steron",
+            "race": "Gnome",
+            "class": "Wizard",
+            "alignment": "Chaotic Neutral",
+            "hitpoints": 8,
+            "level": 1,
+            "ability scores": {
+                "STR": 12,
+                "DEX": 14,
+                "CON": 14,
+                "INT": 17,
+                "WIS": 8,
+                "CHA": 12
+            },
+            "traits": [
+                "Darkvision",
+                "Gnome Cunning"
+            ],
+            "spells": [
+                "Acid Splash",
+                "Chill Touch",
+                "Dancing Lights"
+            ],
+            "created": "07.07.2026 - 14:32:03"
+        }
     }
 ]
