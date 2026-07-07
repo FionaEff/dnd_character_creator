@@ -1,6 +1,6 @@
 # A DnD 5e Character Creator
 
-Based on teh API provided by https://www.dnd5eapi.co/
+Based on the API provided by https://www.dnd5eapi.co/
 
 ## Features:
 

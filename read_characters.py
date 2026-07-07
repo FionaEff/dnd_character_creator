@@ -1,11 +1,18 @@
 import json
+import os
+from create_json import create_json
 
 
 def read_characters() -> list:
 
     characters = []
+    characters_file = "./data/characters.json"
+
+    if not os.path.isfile(characters_file):
+        create_json()
 
     with open("./data/characters.json", "r") as file:
+
         characters = json.load(file)
 
     return characters
