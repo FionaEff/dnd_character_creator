@@ -1,5 +1,6 @@
 from character import Character
 from read_characters import read_characters
+from get_id import get_id
 import api
 import random
 import time
@@ -41,7 +42,7 @@ def create_character() -> None:
 
     character = randomise_character(name)
     creation_time = time.strftime("%d.%m.%Y - %H:%M:%S")
-    id = len(character_list) + 1
+    id = get_id()
 
     new_character = {
         id: {

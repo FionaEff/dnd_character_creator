@@ -12,7 +12,6 @@ def read_characters() -> list:
         create_json()
 
     with open("./data/characters.json", "r") as file:
-
         characters = json.load(file)
 
     return characters
