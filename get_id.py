@@ -4,12 +4,9 @@ from read_characters import read_characters
 def get_id() -> int:
 
     characters_list = read_characters()
-    id_list = []
     id = 0
 
-    for entry in characters_list:
-        for id, details in entry.items():
-            id_list.append(int(id))
+    id_list = [int(id) for entry in characters_list for id in entry]
 
     id = max(id_list) + 1
 
