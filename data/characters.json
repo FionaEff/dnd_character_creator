@@ -138,5 +138,34 @@
             "spells": [],
             "created": "07.07.2026 - 17:41:00"
         }
+    },
+    {
+        "7": {
+            "name": "Testi Mc Testitest",
+            "race": "Half-Elf",
+            "class": "Paladin",
+            "alignment": "Lawful Neutral",
+            "hitpoints": 9,
+            "level": 1,
+            "ability scores": {
+                "STR": 7,
+                "DEX": 14,
+                "CON": 9,
+                "INT": 13,
+                "WIS": 11,
+                "CHA": 11
+            },
+            "traits": [
+                "Darkvision",
+                "Fey Ancestry",
+                "Skill Versatility"
+            ],
+            "spells": [
+                "Bless",
+                "Command",
+                "Cure Wounds"
+            ],
+            "created": "08.07.2026 - 08:59:27"
+        }
     }
 ]

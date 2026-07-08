@@ -11,15 +11,16 @@ def get_ability_scores() -> dict:
     with urllib.request.urlopen(config.ABILITY_SCORES) as ability_response:
         data = json.loads(ability_response.read().decode())["results"]
 
-        for ability in data:
-            abilities.append(ability["name"])
+        if data:
+            for ability in data:
+                abilities.append(ability["name"])
 
-    ability_scores.setdefault(abilities[4], 0)
-    ability_scores.setdefault(abilities[2], 0)
-    ability_scores.setdefault(abilities[1], 0)
-    ability_scores.setdefault(abilities[3], 0)
-    ability_scores.setdefault(abilities[5], 0)
-    ability_scores.setdefault(abilities[0], 0)
+            ability_scores.setdefault(abilities[4], 0)
+            ability_scores.setdefault(abilities[2], 0)
+            ability_scores.setdefault(abilities[1], 0)
+            ability_scores.setdefault(abilities[3], 0)
+            ability_scores.setdefault(abilities[5], 0)
+            ability_scores.setdefault(abilities[0], 0)
 
     return ability_scores
 
@@ -31,21 +32,24 @@ def get_race() -> list:
     with urllib.request.urlopen(config.RACES) as races_response:
         data = json.loads(races_response.read().decode())["results"]
 
-        for race in data:
-            races.append(race["name"])
+        if data:
+            for race in data:
+                races.append(race["name"])
 
     return races
 
 
-def get_race_details(race: str, purpose="ability_bonuses") -> list:
+def get_race_details(race: str, purpose="ability_bonuses") -> dict:
 
     ability_bonuses = {}
+    traits = {}
 
     with urllib.request.urlopen(config.RACES + race) as race_details_response:
         data = json.loads(race_details_response.read().decode())
 
-    ability_bonuses = data["ability_bonuses"]
-    traits = data["traits"]
+    if data:
+        ability_bonuses = data["ability_bonuses"]
+        traits = data["traits"]
 
     if purpose == "traits":
         return traits
@@ -60,8 +64,9 @@ def get_classes() -> list:
     with urllib.request.urlopen(config.CLASSES) as classes_response:
         data = json.loads(classes_response.read().decode())["results"]
 
-        for character_class in data:
-            classes.append(character_class["name"])
+        if data:
+            for character_class in data:
+                classes.append(character_class["name"])
 
     return classes
 
@@ -75,7 +80,8 @@ def get_class_details(character_class) -> dict:
     ) as class_details_response:
         data = json.loads(class_details_response.read().decode())
 
-        class_details = data
+        if data:
+            class_details = data
 
     return class_details
 
@@ -87,8 +93,9 @@ def get_alignment() -> list:
     with urllib.request.urlopen(config.ALIGNMENT) as alignment_response:
         data = json.loads(alignment_response.read().decode())["results"]
 
-        for alignment in data:
-            alignments.append(alignment["name"])
+        if data:
+            for alignment in data:
+                alignments.append(alignment["name"])
 
     return alignments
 
@@ -102,7 +109,8 @@ def get_spells(character_class) -> list:
     ) as spells_response:
         data = json.loads(spells_response.read().decode())["results"]
 
-        for spell in data:
-            spells.append({"name": spell["name"], "level": spell["level"]})
+        if data:
+            for spell in data:
+                spells.append({"name": spell["name"], "level": spell["level"]})
 
     return spells
