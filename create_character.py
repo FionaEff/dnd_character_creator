@@ -9,9 +9,18 @@ import json
 
 def randomise_character(name) -> Character:
 
-    race = random.choice(api.get_race())
-    character_class = random.choice(api.get_classes())
-    alignment = random.choice(api.get_alignment())
+    race = ""
+    character_class = ""
+    alignment = ""
+
+    try:
+        race = random.choice(api.get_race())
+        character_class = random.choice(api.get_classes())
+        alignment = random.choice(api.get_alignment())
+
+    except IndexError:
+        print("Some required data cannot be found! Aborting character creation...")
+
     hitpoints = 0
     level = 1
 
@@ -41,6 +50,7 @@ def create_character() -> None:
             break
 
     character = randomise_character(name)
+
     creation_time = time.strftime("%d.%m.%Y - %H:%M:%S")
     id = new_id()
 
