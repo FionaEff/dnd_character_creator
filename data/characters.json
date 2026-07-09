@@ -84,203 +84,84 @@
     },
     {
         "5": {
-            "name": "Testi McTest",
-            "race": "Gnome",
-            "class": "Ranger",
-            "alignment": "Chaotic Neutral",
-            "hitpoints": 12,
-            "level": 1,
-            "ability scores": {
-                "STR": 14,
-                "DEX": 8,
-                "CON": 14,
-                "INT": 15,
-                "WIS": 13,
-                "CHA": 14
-            },
-            "traits": [
-                "Darkvision",
-                "Savage Attacks",
-                "Relentless Endurance",
-                "Menacing",
-                "Darkvision",
-                "Gnome Cunning"
-            ],
-            "spells": [
-                "Alarm",
-                "Animal Friendship",
-                "Cure Wounds"
-            ],
-            "created": "07.07.2026 - 17:15:33"
-        }
-    },
-    {
-        "6": {
-            "name": "Testi McTest",
+            "name": "Testo Steron",
             "race": "Dragonborn",
-            "class": "Barbarian",
-            "alignment": "Lawful Neutral",
-            "hitpoints": 11,
+            "class": "Sorcerer",
+            "alignment": "Neutral Good",
+            "hitpoints": 4,
             "level": 1,
             "ability scores": {
-                "STR": 8,
-                "DEX": 13,
-                "CON": 9,
-                "INT": 9,
-                "WIS": 10,
-                "CHA": 11
+                "STR": 16,
+                "DEX": 14,
+                "CON": 7,
+                "INT": 11,
+                "WIS": 6,
+                "CHA": 14
             },
             "traits": [
                 "Draconic Ancestry",
                 "Breath Weapon",
                 "Damage Resistance"
             ],
-            "spells": [],
-            "created": "07.07.2026 - 17:41:00"
-        }
-    },
-    {
-        "7": {
-            "name": "Testi Mc Testitest",
-            "race": "Half-Elf",
-            "class": "Paladin",
-            "alignment": "Lawful Neutral",
-            "hitpoints": 9,
-            "level": 1,
-            "ability scores": {
-                "STR": 7,
-                "DEX": 14,
-                "CON": 9,
-                "INT": 13,
-                "WIS": 11,
-                "CHA": 11
-            },
-            "traits": [
-                "Darkvision",
-                "Fey Ancestry",
-                "Skill Versatility"
-            ],
-            "spells": [
-                "Bless",
-                "Command",
-                "Cure Wounds"
-            ],
-            "created": "08.07.2026 - 08:59:27"
-        }
-    },
-    {
-        "8": {
-            "name": "Testo Steron",
-            "race": "Human",
-            "class": "Bard",
-            "alignment": "Chaotic Evil",
-            "hitpoints": 10,
-            "level": 1,
-            "ability scores": {
-                "STR": 13,
-                "DEX": 12,
-                "CON": 14,
-                "INT": 16,
-                "WIS": 16,
-                "CHA": 12
-            },
-            "traits": [],
-            "spells": [
-                "Dancing Lights",
-                "Light",
-                "Mage Hand"
-            ],
-            "created": "08.07.2026 - 11:24:29"
-        }
-    },
-    {
-        "9": {
-            "name": "Test McSupertest",
-            "race": "Dwarf",
-            "class": "Rogue",
-            "alignment": "Neutral Evil",
-            "hitpoints": 12,
-            "level": 1,
-            "ability scores": {
-                "STR": 13,
-                "DEX": 8,
-                "CON": 18,
-                "INT": 12,
-                "WIS": 11,
-                "CHA": 13
-            },
-            "traits": [
-                "Darkvision",
-                "Dwarven Resilience",
-                "Stonecunning",
-                "Dwarven Combat Training",
-                "Tool Proficiency"
-            ],
-            "spells": [
-                "Dancing Lights",
-                "Light",
-                "Mage Hand"
-            ],
-            "created": "08.07.2026 - 11:25:42"
-        }
-    },
-    {
-        "10": {
-            "name": "Test Character",
-            "race": "Gnome",
-            "class": "Warlock",
-            "alignment": "Neutral Evil",
-            "hitpoints": 9,
-            "level": 1,
-            "ability scores": {
-                "STR": 16,
-                "DEX": 13,
-                "CON": 13,
-                "INT": 13,
-                "WIS": 14,
-                "CHA": 11
-            },
-            "traits": [
-                "Darkvision",
-                "Gnome Cunning"
-            ],
-            "spells": [
-                "Chill Touch",
-                "Eldritch Blast",
-                "Mage Hand"
-            ],
-            "created": "09.07.2026 - 08:30:40"
-        }
-    },
-    {
-        "11": {
-            "name": "Tester McTestenstein",
-            "race": "Dwarf",
-            "class": "Wizard",
-            "alignment": "Lawful Neutral",
-            "hitpoints": 8,
-            "level": 1,
-            "ability scores": {
-                "STR": 12,
-                "DEX": 7,
-                "CON": 15,
-                "INT": 8,
-                "WIS": 9,
-                "CHA": 15
-            },
-            "traits": [
-                "Darkvision",
-                "Dwarven Resilience",
-                "Stonecunning",
-                "Dwarven Combat Training",
-                "Tool Proficiency"
-            ],
             "spells": [
                 "Acid Splash",
                 "Chill Touch",
                 "Dancing Lights"
             ],
-            "created": "09.07.2026 - 09:14:00"
+            "created": "09.07.2026 - 10:28:37"
+        }
+    },
+    {
+        "6": {
+            "name": "Testi McTest",
+            "race": "Dragonborn",
+            "class": "Druid",
+            "alignment": "Neutral Evil",
+            "hitpoints": 10,
+            "level": 1,
+            "ability scores": {
+                "STR": 16,
+                "DEX": 5,
+                "CON": 15,
+                "INT": 7,
+                "WIS": 13,
+                "CHA": 17
+            },
+            "traits": [
+                "Draconic Ancestry",
+                "Breath Weapon",
+                "Damage Resistance"
+            ],
+            "spells": [
+                "Druidcraft",
+                "Guidance",
+                "Mending"
+            ],
+            "created": "09.07.2026 - 10:28:50"
+        }
+    },
+    {
+        "7": {
+            "name": "Testi McTestenstein",
+            "race": "Gnome",
+            "class": "Monk",
+            "alignment": "Chaotic Evil",
+            "hitpoints": 9,
+            "level": 1,
+            "ability scores": {
+                "STR": 11,
+                "DEX": 15,
+                "CON": 12,
+                "INT": 13,
+                "WIS": 14,
+                "CHA": 12
+            },
+            "traits": [
+                "Darkvision",
+                "Gnome Cunning"
+            ],
+            "spells": [],
+            "created": "09.07.2026 - 10:37:54"
         }
     }
 ]

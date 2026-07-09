@@ -4,9 +4,9 @@ from api import get_ability_scores, get_class_details, get_race_details, get_spe
 
 class Character:
 
-    ability_scores = get_ability_scores()
+    """ ability_scores = get_ability_scores()
     traits = []
-    spells = []
+    spells = [] """
 
     def __init__(
         self, name, race, character_class, hitpoints, alignment="neutral", level=1
@@ -17,14 +17,15 @@ class Character:
         self.level = level
         self.hitpoints = hitpoints
         self.alignment = alignment
-        """ self.traits = []
+        self.traits = []
         self.spells = []
-        self.ability_scores = get_ability_scores() """
+        self.ability_scores = {}
 
     def roll_ability_scores(self):
 
         scores = []
         dice_rolls = []
+        self.ability_scores = get_ability_scores()
 
         while len(scores) < 6:
 
@@ -38,7 +39,7 @@ class Character:
             scores.append(ability_score)
             dice_rolls.clear()
 
-        Character.ability_scores.update(
+        self.ability_scores.update(
             {
                 "STR": scores[0],
                 "DEX": scores[1],
@@ -53,7 +54,7 @@ class Character:
 
         hit_die = get_class_details(self.character_class.lower())["hit_die"]
 
-        self.hitpoints = hit_die + ((Character.ability_scores["CON"] - 10) // 2)
+        self.hitpoints = hit_die + ((self.ability_scores["CON"] - 10) // 2)
 
     def apply_race_bonuses(self):
 
@@ -61,25 +62,25 @@ class Character:
 
         for bonus in bonuses:
             ability = bonus["ability_score"]["name"]
-            score = bonus["bonus"] + Character.ability_scores[ability]
-            Character.ability_scores.update({ability: score})
+            score = bonus["bonus"] + self.ability_scores[ability]
+            self.ability_scores.update({ability: score})
 
     def racial_traits(self):
 
         traits = get_race_details(self.race.lower(), "traits")
 
         for trait in traits:
-            Character.traits.append(trait["name"])
+            self.traits.append(trait["name"])
 
     def set_spells(self):
 
         class_details = get_class_details(self.character_class.lower())
-        spell_list = get_spells(self.character_class.lower())
 
         if "spellcasting" in class_details:
+            spell_list = get_spells(self.character_class.lower())
 
             for spell in spell_list:
                 if spell["level"] == 0 or spell["level"] == 1:
-                    Character.spells.append(spell["name"])
-                    if len(Character.spells) == 3:
+                    self.spells.append(spell["name"])
+                    if len(self.spells) == 3:
                         break
