@@ -9,17 +9,9 @@ import json
 
 def randomise_character(name) -> Character:
 
-    race = ""
-    character_class = ""
-    alignment = ""
-
-    try:
-        race = random.choice(api.get_race())
-        character_class = random.choice(api.get_classes())
-        alignment = random.choice(api.get_alignment())
-
-    except IndexError:
-        print("Some required data cannot be found! Aborting character creation...")
+    race = random.choice(api.get_race())
+    character_class = random.choice(api.get_classes())
+    alignment = random.choice(api.get_alignment())
 
     hitpoints = 0
     level = 1

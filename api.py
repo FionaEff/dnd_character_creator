@@ -1,6 +1,8 @@
 import urllib.request
 import json
 import config
+import time
+from exception import NoDataError
 
 
 def get_ability_scores() -> dict:
@@ -22,6 +24,9 @@ def get_ability_scores() -> dict:
             ability_scores.setdefault(abilities[5], 0)
             ability_scores.setdefault(abilities[0], 0)
 
+        else:
+            raise NoDataError
+
     return ability_scores
 
 
@@ -35,6 +40,9 @@ def get_race() -> list:
         if data:
             for race in data:
                 races.append(race["name"])
+
+        else:
+            raise NoDataError
 
     return races
 
@@ -50,6 +58,9 @@ def get_race_details(race: str, purpose="ability_bonuses") -> dict:
     if data:
         ability_bonuses = data["ability_bonuses"]
         traits = data["traits"]
+
+    else:
+        raise NoDataError
 
     if purpose == "traits":
         return traits
@@ -68,6 +79,9 @@ def get_classes() -> list:
             for character_class in data:
                 classes.append(character_class["name"])
 
+        else:
+            raise NoDataError
+
     return classes
 
 
@@ -83,6 +97,9 @@ def get_class_details(character_class) -> dict:
         if data:
             class_details = data
 
+        else:
+            raise NoDataError
+
     return class_details
 
 
@@ -96,6 +113,9 @@ def get_alignment() -> list:
         if data:
             for alignment in data:
                 alignments.append(alignment["name"])
+
+        else:
+            raise NoDataError
 
     return alignments
 
@@ -112,5 +132,8 @@ def get_spells(character_class) -> list:
         if data:
             for spell in data:
                 spells.append({"name": spell["name"], "level": spell["level"]})
+
+        else:
+            raise NoDataError
 
     return spells

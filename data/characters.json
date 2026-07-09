@@ -167,5 +167,120 @@
             ],
             "created": "08.07.2026 - 08:59:27"
         }
+    },
+    {
+        "8": {
+            "name": "Testo Steron",
+            "race": "Human",
+            "class": "Bard",
+            "alignment": "Chaotic Evil",
+            "hitpoints": 10,
+            "level": 1,
+            "ability scores": {
+                "STR": 13,
+                "DEX": 12,
+                "CON": 14,
+                "INT": 16,
+                "WIS": 16,
+                "CHA": 12
+            },
+            "traits": [],
+            "spells": [
+                "Dancing Lights",
+                "Light",
+                "Mage Hand"
+            ],
+            "created": "08.07.2026 - 11:24:29"
+        }
+    },
+    {
+        "9": {
+            "name": "Test McSupertest",
+            "race": "Dwarf",
+            "class": "Rogue",
+            "alignment": "Neutral Evil",
+            "hitpoints": 12,
+            "level": 1,
+            "ability scores": {
+                "STR": 13,
+                "DEX": 8,
+                "CON": 18,
+                "INT": 12,
+                "WIS": 11,
+                "CHA": 13
+            },
+            "traits": [
+                "Darkvision",
+                "Dwarven Resilience",
+                "Stonecunning",
+                "Dwarven Combat Training",
+                "Tool Proficiency"
+            ],
+            "spells": [
+                "Dancing Lights",
+                "Light",
+                "Mage Hand"
+            ],
+            "created": "08.07.2026 - 11:25:42"
+        }
+    },
+    {
+        "10": {
+            "name": "Test Character",
+            "race": "Gnome",
+            "class": "Warlock",
+            "alignment": "Neutral Evil",
+            "hitpoints": 9,
+            "level": 1,
+            "ability scores": {
+                "STR": 16,
+                "DEX": 13,
+                "CON": 13,
+                "INT": 13,
+                "WIS": 14,
+                "CHA": 11
+            },
+            "traits": [
+                "Darkvision",
+                "Gnome Cunning"
+            ],
+            "spells": [
+                "Chill Touch",
+                "Eldritch Blast",
+                "Mage Hand"
+            ],
+            "created": "09.07.2026 - 08:30:40"
+        }
+    },
+    {
+        "11": {
+            "name": "Tester McTestenstein",
+            "race": "Dwarf",
+            "class": "Wizard",
+            "alignment": "Lawful Neutral",
+            "hitpoints": 8,
+            "level": 1,
+            "ability scores": {
+                "STR": 12,
+                "DEX": 7,
+                "CON": 15,
+                "INT": 8,
+                "WIS": 9,
+                "CHA": 15
+            },
+            "traits": [
+                "Darkvision",
+                "Dwarven Resilience",
+                "Stonecunning",
+                "Dwarven Combat Training",
+                "Tool Proficiency"
+            ],
+            "spells": [
+                "Acid Splash",
+                "Chill Touch",
+                "Dancing Lights"
+            ],
+            "created": "09.07.2026 - 09:14:00"
+        }
     }
 ]

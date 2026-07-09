@@ -1,6 +1,7 @@
 from create_character import create_character
 from read_characters import print_characters, print_character_details
 from delete_character import delete_character
+from exception import NoDataError
 
 
 def main():
@@ -24,7 +25,10 @@ def main():
                 case 2:
                     print_character_details()
                 case 3:
-                    create_character()
+                    try:
+                        create_character()
+                    except NoDataError as e:
+                        print(e)
                 case 4:
                     delete_character()
                 case 0:

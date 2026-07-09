@@ -17,6 +17,9 @@ class Character:
         self.level = level
         self.hitpoints = hitpoints
         self.alignment = alignment
+        """ self.traits = []
+        self.spells = []
+        self.ability_scores = get_ability_scores() """
 
     def roll_ability_scores(self):
 
@@ -49,6 +52,7 @@ class Character:
     def starting_hitpoints(self):
 
         hit_die = get_class_details(self.character_class.lower())["hit_die"]
+
         self.hitpoints = hit_die + ((Character.ability_scores["CON"] - 10) // 2)
 
     def apply_race_bonuses(self):
