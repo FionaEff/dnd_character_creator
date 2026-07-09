@@ -4,10 +4,6 @@ from api import get_ability_scores, get_class_details, get_race_details, get_spe
 
 class Character:
 
-    """ ability_scores = get_ability_scores()
-    traits = []
-    spells = [] """
-
     def __init__(
         self, name, race, character_class, hitpoints, alignment="neutral", level=1
     ):
