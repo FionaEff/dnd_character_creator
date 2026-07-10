@@ -1,7 +1,7 @@
-from create_character import create_character
-from read_characters import print_characters, print_character_details
-from delete_character import delete_character
-from exception import NoDataError
+from character.create_character import create_character
+from character.read_characters import print_characters, print_character_details
+from character.delete_character import delete_character
+from exception.exception import NoDataError
 
 
 def main():

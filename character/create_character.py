@@ -1,7 +1,7 @@
-from character import Character
-from read_characters import read_characters
-from id_handling import new_id
-import api
+from character.character import Character
+from character.read_characters import read_characters
+from character.id_handling import new_id
+import api.api as api
 import random
 import time
 import json

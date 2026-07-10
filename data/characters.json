@@ -81,5 +81,34 @@
             ],
             "created": "28.05.2026 - 08:14:26"
         }
+    },
+    {
+        "5": {
+            "name": "Test McTesti",
+            "race": "Tiefling",
+            "class": "Druid",
+            "alignment": "Neutral",
+            "hitpoints": 9,
+            "level": 1,
+            "ability scores": {
+                "STR": 14,
+                "DEX": 17,
+                "CON": 13,
+                "INT": 17,
+                "WIS": 13,
+                "CHA": 10
+            },
+            "traits": [
+                "Darkvision",
+                "Hellish Resistance",
+                "Infernal Legacy"
+            ],
+            "spells": [
+                "Druidcraft",
+                "Guidance",
+                "Mending"
+            ],
+            "created": "10.07.2026 - 06:30:48"
+        }
     }
 ]

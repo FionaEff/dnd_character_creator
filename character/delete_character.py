@@ -1,4 +1,4 @@
-from read_characters import read_characters
+from character.read_characters import read_characters
 import json
 
 

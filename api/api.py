@@ -1,8 +1,7 @@
 import urllib.request
 import json
-import config
-import time
-from exception import NoDataError
+import api.config as config
+from exception.exception import NoDataError
 
 
 def get_ability_scores() -> dict:

@@ -1,6 +1,6 @@
 import json
 import os
-from create_json import create_json
+from character.create_json import create_json
 
 
 def read_characters() -> list:

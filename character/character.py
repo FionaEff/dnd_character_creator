@@ -1,5 +1,5 @@
 import random
-from api import get_ability_scores, get_class_details, get_race_details, get_spells
+from api.api import get_ability_scores, get_class_details, get_race_details, get_spells
 
 
 class Character:
