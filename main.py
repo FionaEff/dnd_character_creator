@@ -36,7 +36,7 @@ def main() -> None:
                 case _:
                     print("Please just use numbers 1 - 4 and 0!\n")
         except ValueError:
-            print("Please just use the number keys!/n")
+            print("Please just use the number keys!\n")
 
 
 main()

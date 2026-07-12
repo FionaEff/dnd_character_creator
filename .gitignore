@@ -215,5 +215,5 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Data directory
-./data
+# Individual Data
+./data/characters.json
