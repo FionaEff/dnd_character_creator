@@ -4,7 +4,7 @@ from character.delete_character import delete_character
 from exception.exception import NoDataError
 
 
-def main():
+def main() -> None:
 
     print("DnD 5e Character Creator\n")
 

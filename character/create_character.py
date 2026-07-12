@@ -1,13 +1,13 @@
 from character.character import Character
 from character.read_characters import read_characters
-from character.id_handling import new_id
+from character.get_id import get_id
 import api.api as api
 import random
 import time
 import json
 
 
-def randomise_character(name) -> Character:
+def randomise_character(name: str) -> Character:
 
     race = random.choice(api.get_race())
     character_class = random.choice(api.get_classes())
@@ -44,7 +44,7 @@ def create_character() -> None:
     character = randomise_character(name)
 
     creation_time = time.strftime("%d.%m.%Y - %H:%M:%S")
-    id = new_id()
+    id = str(get_id(character_list))
 
     new_character = {
         id: {

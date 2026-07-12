@@ -22,7 +22,7 @@ def delete_character() -> None:
             while True:
                 confirm = str(
                     input(
-                        f"Do you want to delete \033[1m{details["name"]}\033[0m?\nConfirm with y/n: "
+                        f"Do you want to delete \033[1m{details['name']}\033[0m?\nConfirm with y/n: "
                     ).lower()
                 )
                 if confirm == "y":
@@ -32,7 +32,7 @@ def delete_character() -> None:
                         json.dump(character_list, file, indent=4)
 
                     print(
-                        f"Character \033[1m{details["name"]}\033[0m has been deleted!"
+                        f"Character \033[1m{details['name']}\033[0m has been deleted!"
                     )
 
                     menu = str(input("\nPlease press Enter to continue ... "))

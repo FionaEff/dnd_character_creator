@@ -1,6 +1,7 @@
 import json
 
-def create_json():
+
+def create_json() -> None:
 
     character_list = []
 

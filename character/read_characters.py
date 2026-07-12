@@ -5,16 +5,16 @@ from character.create_json import create_json
 
 def read_characters() -> list:
 
-    characters = []
+    character_list = []
     characters_file = "./data/characters.json"
 
     if not os.path.isfile(characters_file):
         create_json()
 
     with open("./data/characters.json", "r") as file:
-        characters = json.load(file)
+        character_list = json.load(file)
 
-    return characters
+    return character_list
 
 
 def print_characters() -> None:
@@ -37,6 +37,7 @@ def print_characters() -> None:
 def print_character_details() -> None:
 
     character_list = read_characters()
+    id_found = False
 
     while True:
         id_input = str(input("Please enter the ID of the character: "))
@@ -47,31 +48,33 @@ def print_character_details() -> None:
 
 
     for entry in character_list:
-        for id, details in entry.items():
-            if id == id_input:
-                print(f"\n{details["name"]}")
-                print("-" * 20)
-                for key, value in details.items():
-                    if key != "ability scores" and key != "traits" and key != "spells":
-                        print(f"\033[1m{key.capitalize()}:\033[0m {value}")
+        if id_input in entry:
+            id_found = True
+            details = entry[id_input]
+            print(f"\n{details["name"]}")
+            print("-" * 20)
 
-                    elif key == "ability scores":
-                        print(f"\n\033[1m{key.title()}:\033[0m")
-                        for ability, score in details["ability scores"].items():
-                            print(f"{ability:>5}: {score}")
+            for key, value in details.items():
+                if key != "ability scores" and key != "traits" and key != "spells":
+                    print(f"\033[1m{key.capitalize()}:\033[0m {value}")
 
-                    elif key == "traits":
-                        print(f"\n\033[1m{key.capitalize()}:\033[0m {", ".join(value)}")
+                elif key == "ability scores":
+                    print(f"\n\033[1m{key.title()}:\033[0m")
+                    for ability, score in details["ability scores"].items():
+                        print(f"{ability:>5}: {score}")
 
-                    elif key == "spells":
-                        print(f"\033[1m{key.capitalize()}:\033[0m {", ".join(value)}")
+                elif key == "traits":
+                    print(f"\n\033[1m{key.capitalize()}:\033[0m {", ".join(value)}")
 
-                menu = str(input("\nPlease press Enter to continue ... "))
-                print("")
+                elif key == "spells":
+                    print(f"\033[1m{key.capitalize()}:\033[0m {", ".join(value)}")
 
-                return
+            menu = str(input("\nPlease press Enter to continue ... "))
+            print("")
 
-    if id_input not in character_list:
+            return
+
+    if not id_found:
         print("\nCharacter not found!\n")
         return
 

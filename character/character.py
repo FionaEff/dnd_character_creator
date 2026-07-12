@@ -6,7 +6,7 @@ class Character:
 
     def __init__(
         self, name, race, character_class, hitpoints, alignment="neutral", level=1
-    ):
+    ) -> None:
         self.name = name
         self.race = race
         self.character_class = character_class
@@ -17,7 +17,7 @@ class Character:
         self.spells = []
         self.ability_scores = {}
 
-    def roll_ability_scores(self):
+    def roll_ability_scores(self) -> None:
 
         scores = []
         dice_rolls = []
@@ -46,7 +46,7 @@ class Character:
             }
         )
 
-    def starting_hitpoints(self):
+    def starting_hitpoints(self) -> None:
 
         hit_die = get_class_details(self.character_class.lower())["hit_die"]
 
@@ -61,14 +61,14 @@ class Character:
             score = bonus["bonus"] + self.ability_scores[ability]
             self.ability_scores.update({ability: score})
 
-    def racial_traits(self):
+    def racial_traits(self) -> None:
 
         traits = get_race_details(self.race.lower(), "traits")
 
         for trait in traits:
             self.traits.append(trait["name"])
 
-    def set_spells(self):
+    def set_spells(self) -> None:
 
         class_details = get_class_details(self.character_class.lower())
 
